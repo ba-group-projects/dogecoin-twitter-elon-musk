@@ -11,14 +11,13 @@
 ## Industry + Question
 
 - Facebook: Impact on brand reputation, througn name change and metaverse vision
-  - twitter api
-  - scrape instagram ?
 - Tesla: Does Tesla create engagement when Elon Musk tweets about doge coin
-  - twttier api
-  - scrape instagram ?
 - Red Bull: engagement from F1 vs soccer in the UK
-  - googel trends api
-  - twitter api
 - 88 rising business: impact on brand reputation Rich Chigga to Rich Brian
-  - googel trends api
-  - twitter api
+
+## Business Analytics Tools
+
+- twttier api
+- google trends api
+- scrape instagram ?
+- scrape techcrunch or other news website
