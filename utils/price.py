@@ -9,12 +9,13 @@ class PriceGetter:
         self.binance = ccxt.binance()
         self.symbol = symbol
         self.timeframe = timeframe
+        self.dfm = pd.DataFrame()
 
     def rank_data(self):
         self.dfm.sort_values("timestamp")
 
     def rename_col(self):
-        self.dfm.rename({0: "timestamp", 1: "open", 2: "high", 3: "low", 4: "close", 5: "volume"}, inplace=True)
+        self.dfm.rename({0: "timestamp", 1: "open", 2: "high", 3: "low", 4: "close", 5: "volume"},axis=1, inplace=True)
 
     def update_price(self, since, limit):
         ohlcv = pd.DataFrame(self.binance.fetch_ohlcv(self.symbol, self.timeframe, since, limit))
