@@ -1,6 +1,7 @@
 import pandas as pd
 from selenium import webdriver
 from dateutil import parser
+import numpy as np
 import urllib
 from time import sleep
 from selenium.common.exceptions import StaleElementReferenceException
@@ -40,7 +41,7 @@ class TwitterScraper:
             '//*[@id="layers"]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]').click()
         sleep(5)
         password = self.driver.find_element_by_xpath(
-            '//*[@id="layers"]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div')
+            '//*[@id="layers"]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[3]/div/label/div/div[2]/div/input')
         password.send_keys(self.password)
         # click login button
         self.driver.find_element_by_xpath(
@@ -51,8 +52,8 @@ class TwitterScraper:
         while self.flag:
             elements = self.get_tweets()
             self.judge_whether_post_time_before_start_time(elements, start_date)
-            try:
-                for tweet in elements:
+            for tweet in elements:
+                try:
                     post_datetime = self.parse_post_time(tweet)
                     content = self.parse_content(tweet)
                     like_num = self.parse_like_num(tweet)
@@ -66,9 +67,8 @@ class TwitterScraper:
                     self.tweet_comment_num_list.append(comment_num)
                     self.retweet_list.append(retweet)
                     print(post_datetime, content, like_num, retweet_num, comment_num, retweet)
-            except StaleElementReferenceException:
-                print("Loop finished")
-                break
+                except StaleElementReferenceException:
+                    pass
             sleep(5)
             self.scroll_down()
 
@@ -81,8 +81,8 @@ class TwitterScraper:
     def judge_whether_post_time_before_start_time(self, elements, start_date):
         if self.parse_post_time(elements[-1]) <= start_date:
             self.flag = False
-        if self.parse_post_time(elements[-1]) == self.last_post_date:
-            self.flag = False
+        # if self.parse_post_time(elements[-1]) == self.last_post_date:
+        #     self.flag = False
         self.last_post_date = self.parse_post_time(elements[-1])
 
     def get_tweets(self):
@@ -90,7 +90,7 @@ class TwitterScraper:
         return elements
 
     def scroll_down(self):
-        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        self.driver.execute_script("scrollBy(0, 2000);")
 
     @staticmethod
     def parse_post_time(element):
@@ -142,11 +142,11 @@ class TwitterCleaner:
 
     def clean_tweets(self):
         # 8 about doge ,4 about spacex, 0 about shiba
-        self.dfm = self.dfm[self.dfm["content"].apply(lambda x: "doge" in x.lower())]
+        self.dfm = self.dfm.drop_duplicates()
+        self.dfm = self.dfm[self.dfm["content"].apply(lambda x: "doge" in x.lower() if x is not np.nan else False)]
         self.dfm.to_csv("data/tweets_clean.csv", index=False)
 
 if __name__ == '__main__':
-    # ts = TwitterScraper("1275021527@qq.com", "Holmes&Twitter")
-    # ts.get_and_parse_all_tweets(parser.parse("2021-01-01T00:00:00.000Z"))
     tc = TwitterCleaner(pd.read_csv("data/tweets.csv"))
     tc.clean_tweets()
+
