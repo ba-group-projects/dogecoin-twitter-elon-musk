@@ -31,7 +31,10 @@ if __name__ == '__main__':
     price = PriceGetter()
     date = pd.read_csv("./data/doge_tweets.csv")["timestamp"]
     for d in date:
-        timestamp = int(parser.parse(d).timestamp() - 3600) * 1000
+        if 4<=parser.parse(d).month<=10:
+            timestamp = int(parser.parse(d).timestamp() ) * 1000 # daylight saving time
+        else:
+           timestamp = int(parser.parse(d).timestamp() - 3600) * 1000
         price.update_price(since=timestamp, limit=120)
     price.rename_col()
     price.drop_duplicates()
