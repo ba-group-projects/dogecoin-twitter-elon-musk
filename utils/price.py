@@ -24,8 +24,8 @@ class PriceGetter:
     def drop_duplicates(self):
         self.dfm = self.dfm.drop_duplicates()
 
-    def save_price(self):
-        self.dfm.to_csv(f"data/price_clean.csv", index=False)
+    def save_price(self,filename: str="price_clean.csv"):
+        self.dfm.to_csv(f"data/{filename}.csv", index=False)
 
 if __name__ == '__main__':
     price = PriceGetter()
@@ -34,9 +34,9 @@ if __name__ == '__main__':
         if 4<=parser.parse(d).month<=10:
             timestamp = int(parser.parse(d).timestamp() ) * 1000 # daylight saving time
         else:
-           timestamp = int(parser.parse(d).timestamp() - 3600) * 1000
-        price.update_price(since=timestamp, limit=120)
+           timestamp = int(parser.parse(d).timestamp() - 3600*6) * 1000
+        price.update_price(since=timestamp, limit=720)
     price.rename_col()
     price.drop_duplicates()
     price.rank_data()
-    price.save_price()
+    price.save_price("price_clean_6h.csv")
