@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f416881c-3d63-4fcd-9f89-e11b7698e448" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data/tweet_url.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smm750_eda.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/smm750_eda.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/price.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/price.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/twitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/twitter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +53,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/utils" />
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.price">
+  <component name="RunManager" selected="Python.twitter">
     <configuration name="price" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="smm750-mtp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,8 +109,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.price" />
         <item itemvalue="Python.twitter" />
+        <item itemvalue="Python.price" />
       </list>
     </recent_temporary>
   </component>
@@ -133,6 +138,8 @@
       <workItem from="1636670258434" duration="49000" />
       <workItem from="1636722274468" duration="2000" />
       <workItem from="1636809164026" duration="318000" />
+      <workItem from="1636817669936" duration="938000" />
+      <workItem from="1636898077002" duration="2039000" />
     </task>
     <servers />
   </component>
@@ -151,24 +158,8 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utils/price.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utils/price.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/smm750_mtp$price.coverage" NAME="price Coverage Results" MODIFIED="1636489578600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/smm750_mtp$twitter.coverage" NAME="twitter Coverage Results" MODIFIED="1636483921520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/smm750_mtp$price.coverage" NAME="price Coverage Results" MODIFIED="1636898574550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/smm750_mtp$twitter.coverage" NAME="twitter Coverage Results" MODIFIED="1636900007709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
