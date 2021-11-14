@@ -7,6 +7,8 @@ pip install -r requirements.txt # install packages
 2. Install Google Chrome
 
 3. run the code in the main.ipynb
+   1. set the `data_source` variable
+   2. run the remaining code in the main.ipynb
 
 
 ## The structure of the code
@@ -23,6 +25,8 @@ The structure of the code is as follows:
 - main.ipynb # main code
 - requirements.txt
 - README.md
+- cleaned_price_data.csv(the processed data to analyze price)
+- cleaned_trend_data.csv(the processed data to analyze trend)
 
 ## Known Issues
 1. When running the code, if the google-chrome you installed is stable one, it may cause errors like below
