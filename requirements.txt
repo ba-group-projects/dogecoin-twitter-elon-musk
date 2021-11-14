@@ -109,5 +109,4 @@ wheel==0.37.0
 widgetsnbextension==3.5.1
 wsproto==1.0.0
 yarl==1.6.3
-yfinance==0.1.64
 zipp==3.6.0

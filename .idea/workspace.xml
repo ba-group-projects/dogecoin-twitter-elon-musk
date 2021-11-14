@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f416881c-3d63-4fcd-9f89-e11b7698e448" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/tweet_url.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smm750_eda.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/smm750_eda.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/twitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/twitter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +136,7 @@
       <workItem from="1636809164026" duration="318000" />
       <workItem from="1636817669936" duration="938000" />
       <workItem from="1636898077002" duration="2039000" />
+      <workItem from="1636927404733" duration="728000" />
     </task>
     <servers />
   </component>
