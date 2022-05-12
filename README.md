@@ -1,6 +1,8 @@
-![](https://nairametrics.com/wp-content/uploads/2021/12/Elon-Musk-Dogecoin.jpeg)
+![banner image](https://nairametrics.com/wp-content/uploads/2021/12/Elon-Musk-Dogecoin.jpeg)
 # Elon Musk's Influence on DogeCoin
 Dogecoin is a cryptocurrency created in 2013, featuring the famous “Doge” meme both in its name and on the logos. Although it was first created as a way to make fun of other cryptocurrencies, Dogecoin saw its emergence as a digital investment. On 28th January 2021, Dogecoin closed at 0.01256. Since then it has grown substantially, peaking at 0.7319 on 7th May 2021.
+
+![tweet image](https://github.com/ba-group-projects/dogecoin-twitter-elon-musk/blob/main/img/elon-musk-doge-tweet.jpg)
 
 On the 20th December 2020 he infamously tweeted, “One word: Doge”, which soared the Dogecoin price by 20%. Since then, Dogecoin has gained a steady rise in popularity, with Musk credited for being one of the catalysts in its increase in popularity.
 
