@@ -11,7 +11,7 @@ On the 20th December 2020 he infamously tweeted, “One word: Doge”, which soa
 * [Project Motivation](#motivation)
 * [File Description](#description)
 * [Results](#Results)
-* [Known Issues](#issue)
+* [Known Issue](#issue)
 
 ## Installation
 1. install packages
@@ -47,13 +47,13 @@ The structure of the code is as follows:
 ## Results
 TODO
 
-## Known Issues <a name="issue"></a>
-1. When running the code, if the google-chrome you installed is stable one, it may cause errors like below
-    ```
-    'FileNotFoundError: [Errno 2] No such file or directory: 'google-chrome''
-    ```
-    Solution for this is to run the bash command below
-    ```bash
-    sudo ln -f -s /usr/bin/google-chrome-stable /usr/bin/google-chrome
-    sudo chmod +x /usr/bin/google-chrome
-    ```
+## Known Issue <a name="issue"></a>
+When running the code, if the google-chrome you installed is stable one, it may cause errors like below
+```
+'FileNotFoundError: [Errno 2] No such file or directory: 'google-chrome''
+```
+Solution for this is to run the bash command below
+```bash
+sudo ln -f -s /usr/bin/google-chrome-stable /usr/bin/google-chrome
+sudo chmod +x /usr/bin/google-chrome
+```
