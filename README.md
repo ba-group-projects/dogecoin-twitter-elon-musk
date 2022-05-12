@@ -1,3 +1,4 @@
+![](https://nairametrics.com/wp-content/uploads/2021/12/Elon-Musk-Dogecoin.jpeg)
 # Elon Musk's Influence on DogeCoin
 TODO: add introduction to dogecoin and elon musk's fascination in the cryptocurrency through tweets
 
