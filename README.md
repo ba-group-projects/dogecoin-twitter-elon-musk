@@ -7,6 +7,7 @@ TODO: add introduction to dogecoin and elon musk's fascination in the cryptocurr
 * [Project Motivation](#motivation)
 * [File Description](#description)
 * [Results](#Results)
+* [Known Issues](#issue)
 
 ## Installation
 1. install packages
@@ -42,7 +43,7 @@ The structure of the code is as follows:
 ## Results
 TODO
 
-## Known Issues
+## Known Issues <a name="issue"></a>
 1. When running the code, if the google-chrome you installed is stable one, it may cause errors like below
     ```
     'FileNotFoundError: [Errno 2] No such file or directory: 'google-chrome''
